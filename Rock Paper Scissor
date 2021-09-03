@@ -1,0 +1,34 @@
+import random
+while(1):
+    n=['rock', 'paper', 'scissor']
+    a=random.choice(n)
+    print("Enter your Choice")
+    i=input()
+    j=i.lower()
+    if (j==a):
+        print("Its a Draw as Computer Choose", a)
+    else:
+        if a=="scissor":
+            if j=="rock":
+                print("You Won, Computer Chose", a)
+            elif j=="paper":
+                print("You Lost, Computer Chose", a)
+
+        elif a=="rock":
+            if j=="paper":
+                print("You Won, Computer Chose", a)
+            elif j=="scissor":
+                print("You Lost, Computer Chose", a)
+
+        elif a=="paper":
+            if j=="scissor":
+                print("You Won, Computer Chose", a)
+            elif j=="rock":
+                print("You Lost, Computer Chose", a)
+
+    print("Want to Play Again?")
+    e=input()
+    if (e=="yes"):
+        continue
+    elif (e=="no"):
+        break
